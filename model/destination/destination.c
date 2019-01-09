@@ -101,7 +101,7 @@ double travelThroughAltitude(double ** travelAltitude, int i, int j, int n) {
 		}
 	}
 
-	advanceInDirection(&newI, &newJ, min);
+	advanceInDirection(&i, &j, min);
 
 	return travelAltitude[i][j] + travelThroughAltitude(travelAltitude, i, j, n);
 }
