@@ -93,7 +93,7 @@ double travelThroughAltitude(double ** travelAltitude, int i, int j, int n) {
 	double minAlt = INFINITY;
 
 	for (int k = 0; k < DIRECTIONS; k++) {
-		double alt = checkAltitudeInDirection(travelAltitude, i, j, k, n);
+		double alt = checkAltitudeInDirection(travelAltitude, newI, newJ, k, n);
 
 		if (alt < minAlt) {
 			minAlt = alt;
