@@ -12,10 +12,10 @@ void showAllDestinations(List *l) {
 
 		option = askUserForOption();
 
-		if (option < 1 || option > 2) {
+        if (option < 1 || option > 2) {
             printOptionError();
         }
-	} while (option < 1 || option > MAX_SORTING);
+			} while (option < 1 || option > MAX_SORTING);
 
 	option -= 1;
 
